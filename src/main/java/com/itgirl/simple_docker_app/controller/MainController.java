@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MainController {
 
-    @GetMapping("index")
+    @GetMapping("/index")
     public ResponseEntity<String> index() {
         return ResponseEntity.ok("Hello World");
     }
 }
+
